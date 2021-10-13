@@ -13,7 +13,7 @@ public class PlayerFollow : MonoBehaviour
        if (Vector3.Distance(this.transform.position, PlayerPos.position) <= followThresh)
        {
             transform.position = Vector3.MoveTowards(this.transform.position, PlayerPos.position, speed * Time.deltaTime);
-        transform.LookAt(PlayerPos.position);
+            transform.LookAt(PlayerPos.position);
         }
     }
 }
