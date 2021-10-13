@@ -3,12 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Key
+  - Door
+  - FovShifter
+  - Key2
+  - Door2
+  - Key3
+  - Putin
+  - WinDoor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - TargetLayer
   - Water
   - UI
   - 
