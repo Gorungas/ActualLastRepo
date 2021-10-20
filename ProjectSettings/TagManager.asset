@@ -12,6 +12,8 @@ TagManager:
   - Key3
   - Putin
   - WinDoor
+  - Key4
+  - Door3
   layers:
   - Default
   - TransparentFX

@@ -6,4 +6,5 @@ public static class PublicVar
 {
     public static bool keyCollected = false;
     public static bool key2Collected = false;
+    public static bool key4Collected = false;
 }

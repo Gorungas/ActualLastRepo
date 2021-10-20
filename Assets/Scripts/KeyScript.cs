@@ -7,6 +7,7 @@ public class KeyScript : MonoBehaviour
 {
     public BoxCollider doorCollider;
     public BoxCollider door2Collider;
+    public BoxCollider door3Collider;
     public GameObject fallingFloor;
     public Rigidbody heldRB;
     public Camera cam;
@@ -82,6 +83,11 @@ public class KeyScript : MonoBehaviour
             Destroy(other.gameObject);
             fallingFloor.SetActive(false);
         }
+        else  if (other.CompareTag("Key4"))
+        {
+            Destroy(other.gameObject);
+            PublicVar.key4Collected = true;
+        }
         else if (other.CompareTag("WinDoor"))
         {
             SceneManager.LoadScene("WinScreen");
@@ -113,6 +119,10 @@ public class KeyScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Putin"))
         {
             SceneManager.LoadScene("GameOver");
+        }
+        else if (collision.gameObject.CompareTag("Door3"))
+        {
+            door3Collider.enabled = false;
         }
     }
     IEnumerator ChangeFOV()
